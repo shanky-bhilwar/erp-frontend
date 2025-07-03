@@ -1,12 +1,17 @@
-import React from 'react'
-import CandidateRegistration from './pages/CandidateRegistration' 
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import FutureBusiness from "./pages/Sections/FutureBusiness";
+import CandidateRegistration from "./pages/CandidateRegistration";
 
 const App = () => {
   return (
-    <div>
-      <CandidateRegistration/>
-    </div>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/future-business" element={<FutureBusiness />} />
+        <Route path="/candidate-registration" element={<CandidateRegistration />} />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;
