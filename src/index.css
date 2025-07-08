@@ -1,3 +1,4 @@
+
 @import "tailwindcss";
 
 
@@ -20,3 +21,4 @@ html, body, #root {
 .bgOp {
     background-color: rgba(14, 13, 13, 0.5);
   }
+

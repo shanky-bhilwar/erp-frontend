@@ -1,3 +1,4 @@
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './layouts/Layout';
 import DashboardPage from './pages/Dashboard/BusinessDashboard';
@@ -5,6 +6,8 @@ import HelpdeskPage from './pages/helpdesk/HelpdeskPage';
 import LogisticPage from './pages/Logistics/LogisticPage';
 import LoginPage from './pages/Login/LoginPage';
 import SecondPage from './pages/Login/SecondPage';
+import FutureBusiness from "./pages/Sections/FutureBusiness";
+import CandidateRegistration from "./pages/CandidateRegistration"
 
 function App() {
   return (
