@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaUserShield, FaGlobe, FaShieldAlt, FaCamera, FaSync, FaVideo, FaCircle, FaFileSignature, FaRedo, FaPaperPlane } from "react-icons/fa";
+import { FaUserShield, FaBell, FaGlobe, FaUser, FaShieldAlt, FaBriefcase, FaAddressBook ,FaGraduationCap , FaCamera, FaSync, FaVideo, FaCircle, FaFileSignature, FaRedo, FaPaperPlane } from "react-icons/fa";
 
 
 
