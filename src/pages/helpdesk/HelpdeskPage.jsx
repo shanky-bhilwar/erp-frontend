@@ -1,5 +1,5 @@
 import React from 'react';
-import HelpDesk from '../../../components/helpdesk/Helpdesk';
+import HelpDesk from '../../components/helpdesk/Helpdesk';
 
 const HelpdeskPage = () => {
   return (

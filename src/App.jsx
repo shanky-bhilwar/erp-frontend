@@ -1,29 +1,24 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './layouts/Layout';
-import DashboardPage from  './pages/Dashboard/BusinessDashboard';
-import HelpdeskPage from './pages/Dashboard/helpdesk/HelpdeskPage';
+import DashboardPage from './pages/Dashboard/BusinessDashboard';
+import HelpdeskPage from './pages/helpdesk/HelpdeskPage';
+import LogisticPage from './pages/Logistics/LogisticPage';
+import LoginPage from './pages/Login/LoginPage';
+import SecondPage from './pages/Login/SecondPage';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route
-          path="/"
-          element={<Layout />}
-        >
-          {/* Default route (e.g., redirect or dashboard overview) */}
-          <Route index element={<DashboardPage />} />
+        {/* Route outside Layout */}
+        <Route path="/" element={<LoginPage />} />
+        <Route path="login" element={<SecondPage />} />
 
-          {/* Optional: nested paths under dashboard */}
-           <Route path="dashboard" element={<DashboardPage />} />
-           <Route path="helpdesk" element={<HelpdeskPage />} />
-          {/* <Route path="dashboard/:subPage" element={<DashboardPage />} />  */}
-          
-          {/* Add other main menu routes if needed */}
-          {/* <Route path="pos" element={<DashboardPage />} />
-          <Route path="inventory" element={<DashboardPage />} />
-          <Route path="hr" element={<DashboardPage />} /> */}
-          {/* ... etc */}
+        {/* All other routes wrapped inside Layout */}
+        <Route path="/" element={<Layout />}>
+          <Route path="dashboard" element={<DashboardPage />} />
+          <Route path="helpdesk" element={<HelpdeskPage />} />
+          <Route path="logistics" element={<LogisticPage />} />
         </Route>
       </Routes>
     </Router>
