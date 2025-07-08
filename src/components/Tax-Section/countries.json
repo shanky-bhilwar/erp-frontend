@@ -1,0 +1,119 @@
+{
+  "countries": [
+    {
+      "id": "uae",
+      "name": "United Arab Emirates",
+      "region": "gcc",
+      "flag": "🇦🇪",
+      "bgColor": "bg-red-500",
+      "shortRegion": "GCC Region",
+      "taxData": {
+        "standardVat": "5%",
+        "corporateTax": "9%",
+        "exciseTax": "100%",
+        "vatRegistrationNumber": "123456789123456",
+        "filingRequirements": {
+          "vatFrequency": "Quarterly",
+          "corporateFrequency": "Annually",
+          "lastFilingDate": "28 Feb 2024"
+        },
+        "vatRates": [
+          { "category": "Standard Goods & Services", "rate": "5%", "status": "Active" },
+          { "category": "Education Services", "rate": "0%", "status": "Active" },
+          { "category": "Healthcare Services", "rate": "0%", "status": "Active" },
+          { "category": "International Transportation", "rate": "0%", "status": "Active" }
+        ],
+        "exciseTaxRates": [
+          { "category": "Tobacco Products", "rate": "100%" },
+          { "category": "Energy Drinks", "rate": "50%" },
+          { "category": "Carbonated Drinks", "rate": "50%" },
+          { "category": "Electronic Smoking Devices", "rate": "100%" }
+        ],
+        "withholdingTaxRates": [
+          { "type": "Dividends", "rate": "0%" },
+          { "type": "Interest", "rate": "0%" },
+          { "type": "Royalties", "rate": "0%" },
+          { "type": "Technical Service Fees", "rate": "0%" }
+        ],
+        "customsDuties": "Standard customs duty rate is 5% for most goods. GCC countries exempt from customs duties."
+      }
+    },
+    {
+      "id": "sa",
+      "name": "Saudi Arabia",
+      "region": "gcc",
+      "flag": "🇸🇦",
+      "bgColor": "bg-green-500",
+      "shortRegion": "GCC Region",
+      "taxData": {
+        "standardVat": "15%",
+        "corporateTax": "20%",
+        "exciseTax": "100%",
+        "vatRegistrationNumber": "987654321987654",
+        "filingRequirements": {
+          "vatFrequency": "Monthly",
+          "corporateFrequency": "Annually",
+          "lastFilingDate": "31 Mar 2024"
+        },
+        "vatRates": [
+          { "category": "Standard Goods & Services", "rate": "15%", "status": "Active" },
+          { "category": "Food Items", "rate": "5%", "status": "Active" },
+          { "category": "Healthcare Services", "rate": "0%", "status": "Active" }
+        ],
+        "exciseTaxRates": [
+          { "category": "Tobacco Products", "rate": "100%" },
+          { "category": "Energy Drinks", "rate": "50%" },
+          { "category": "Soft Drinks", "rate": "50%" }
+        ],
+        "withholdingTaxRates": [
+          { "type": "Dividends", "rate": "5%" },
+          { "type": "Interest", "rate": "5%" },
+          { "type": "Royalties", "rate": "15%" }
+        ],
+        "customsDuties": "Standard customs duty rate is 5% for most goods. GCC countries exempt from customs duties."
+      }
+    },
+    {
+      "id": "india",
+      "name": "India",
+      "region": "asia",
+      "flag": "🇮🇳",
+      "bgColor": "bg-yellow-500",
+      "shortRegion": "Asia Region",
+      "taxData": {
+        "standardVat": "18%",
+        "corporateTax": "30%",
+        "exciseTax": "28%",
+        "vatRegistrationNumber": "456789123456789",
+        "filingRequirements": {
+          "vatFrequency": "Monthly",
+          "corporateFrequency": "Quarterly",
+          "lastFilingDate": "31 Jul 2024"
+        },
+        "vatRates": [
+          { "category": "Standard Goods & Services", "rate": "18%", "status": "Active" },
+          { "category": "Essential Goods", "rate": "5%", "status": "Active" },
+          { "category": "Luxury Goods", "rate": "28%", "status": "Active" }
+        ],
+        "exciseTaxRates": [
+          { "category": "Tobacco Products", "rate": "28%" },
+          { "category": "Alcohol", "rate": "28%" },
+          { "category": "Luxury Cars", "rate": "28%" }
+        ],
+        "withholdingTaxRates": [
+          { "type": "Dividends", "rate": "10%" },
+          { "type": "Interest", "rate": "10%" },
+          { "type": "Royalties", "rate": "10%" }
+        ],
+        "customsDuties": "Standard customs duty rate varies from 0% to 150% depending on the product category."
+      }
+    }
+  ],
+  "regions": [
+    { "id": "all", "name": "All" },
+    { "id": "gcc", "name": "GCC" },
+    { "id": "europe", "name": "Europe" },
+    { "id": "asia", "name": "Asia" },
+    { "id": "americas", "name": "Americas" }
+  ]
+}
