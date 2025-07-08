@@ -22,6 +22,10 @@ function App() {
           <Route path="dashboard" element={<DashboardPage />} />
           <Route path="helpdesk" element={<HelpdeskPage />} />
           <Route path="logistics" element={<LogisticPage />} />
+
+          {/*  */}
+          <Route path="/future-business" element={<FutureBusiness />} />
+           <Route path="/candidate-registration" element={<CandidateRegistration />} />
         </Route>
       </Routes>
     </Router>
