@@ -18,7 +18,7 @@ const Menubar = ({
 
   const secondaryMenuItems = [
     'KPI', 'Intelligence', 'Marketing', 'Manufacturing', 'Logistics',
-    'Ecommerce', 'Company setup', 'Future Business', 'Chatbot', 'Helpdesk'
+    'Ecommerce', 'Company setup', 'Future-Business', 'Chatbot', 'Helpdesk'
   ];
 
   const handleMenuClick = (item) => {

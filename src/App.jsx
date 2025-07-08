@@ -25,15 +25,17 @@ function App() {
           <Route path="helpdesk" element={<HelpdeskPage />} />
           <Route path="logistics" element={<LogisticPage />} />
 
+          <Route path="/future-business" element={<DashboardLayout />}>
+            <Route path="future-business-dashboard" element={<FutureBusiness />} />
+            <Route path="tax" element={<TaxSection />} />
+            <Route path="cash-banks" element={<FinancialDashboard />} />
+         </Route>
+
           {/*  */}
            <Route path="/candidate-registration" element={<CandidateRegistration />} />
 
         </Route>
-        <Route path="/dashboard-layout" element={<DashboardLayout />}>
-          <Route path="future-business" element={<FutureBusiness />} />
-          <Route path="tax" element={<TaxSection />} />
-          <Route path="cash-banks" element={<FinancialDashboard />} />
-        </Route>
+        
       </Routes>
     </Router>
   );

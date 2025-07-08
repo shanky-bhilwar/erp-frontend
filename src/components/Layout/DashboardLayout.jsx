@@ -19,7 +19,7 @@ const DashboardLayout = () => {
 
   const tabs = [
     {
-      path: "future-business", // changed from absolute to relative path
+      path: "future-business-dashboard", // changed from absolute to relative path
       name: "Future Business",
       icon: TrendingUp,
       component: <FutureBusiness />,
@@ -61,7 +61,7 @@ const DashboardLayout = () => {
   };
 
   return (
-    <div className="dashboard-container bg-[#f0f2f5] lg:p-5">
+    <div className="dashboard-container bg-[#f0f2f5] lg:p-5 w-full min-h-screen relative overflow-auto">
        <DashboardHeader activeTabData={getActiveTabData()} />
       <ul
         className="flex items-center mb-6 bg-white rounded-xl p-2 shadow-[0_4px_12px_rgba(0,0,0,0.05)] overflow-x-auto whitespace-nowrap"
