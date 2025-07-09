@@ -16,8 +16,8 @@ function App() {
     <Router>
       <Routes>
         {/* Route outside Layout */}
-        <Route path="/" element={<LoginPage />} />
-        <Route path="login" element={<SecondPage />} />
+        {/* <Route path="/" element={<LoginPage />} /> */}
+        <Route path="/" element={<SecondPage />} />
 
         {/* All other routes wrapped inside Layout */}
         <Route path="/" element={<Layout />}>
